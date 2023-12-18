@@ -91,3 +91,22 @@ src/app/\_lib/page.tsx, format-date.ts
      conventions
   5. If you want to include an underscore in URL segments, you can prefix the folder
      name with "%5F," which is the URL-encoded form of an underscore
+
+# Route Group
+
+src/app/(auth)/login.tsx, register-user.tsx, forgot-password.tsx
+
+if we do that next-js won't count auth as a route, it just for grouping purpose
+group then by there nature
+
+# Layouts
+
+1. A page is Ul that is unique to a route
+2. A layout is Ul that is shared between multiple pages in the app
+
+## How to Create Layouts
+
+1. You can define a layout by default exporting a React component from a layout.js
+   or layout.tsx file
+2. That component should accept a children prop that will be populated with a child
+   page during rendering
