@@ -63,3 +63,7 @@ products -- app/products/[productId]/page.tsx
 # Nested dynamic route
 
 products-review -- app/products/[productId]/reviews/[reviewId]
+
+# Catch all Segments
+
+docs -- app/docs/[...slug]/page.tsx
