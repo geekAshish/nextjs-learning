@@ -78,3 +78,16 @@ for component level: notFound() -- with condition -- you could create a specific
 1. if you create a folder and inside that, if you create file another then page.tsx, next-js doesn't render that on the ui, you can use it like component and create a file name page.tsx
 
 2. you can create a separate folder for component : src/component
+
+# Private Folders
+
+src/app/\_lib/page.tsx, format-date.ts
+
+- Private Folders contd.
+  1. For separating UI logic from routing logic
+  2. For consistently organizing internal files across a project
+  3. For sorting and grouping files in code editors
+  4. And finally, for avoiding potential naming conflicts with future Next.js file
+     conventions
+  5. If you want to include an underscore in URL segments, you can prefix the folder
+     name with "%5F," which is the URL-encoded form of an underscore
