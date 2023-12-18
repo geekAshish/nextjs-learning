@@ -40,4 +40,16 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
    Client components can't perform tasks like reading files, but they have the
    ability to use hooks and manage interactions
 
-# Routing
+## 3. Routing
+
+# Routing Conventions
+
+1. All routes must be placed inside the app folder
+2. Every file that corresponds to a route must be named page.js or page.tsx
+3. Every folder corresponds to a path segment in the browser URL
+
+home route -- app/page.tsx
+profile -- app/profile/page.tsx
+about -- app/about/page.tsx
+
+# Nesting route
