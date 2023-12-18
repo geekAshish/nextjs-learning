@@ -53,3 +53,13 @@ profile -- app/profile/page.tsx
 about -- app/about/page.tsx
 
 # Nested route
+
+blog route -- app/blog/first/page.tsx
+
+# dynamic route
+
+products -- app/products/[productId]/page.tsx
+
+# Nested dynamic route
+
+products-review -- app/products/[productId]/reviews/[reviewId]
