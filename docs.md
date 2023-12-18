@@ -72,3 +72,9 @@ docs -- app/docs/[...slug]/page.tsx
 
 for whole app level: not-found.tsx
 for component level: notFound() -- with condition -- you could create a specific page for that
+
+# File Colocation
+
+1. if you create a folder and inside that, if you create file another then page.tsx, next-js doesn't render that on the ui, you can use it like component and create a file name page.tsx
+
+2. you can create a separate folder for component : src/component
