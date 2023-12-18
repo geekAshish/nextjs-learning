@@ -52,4 +52,4 @@ home route -- app/page.tsx
 profile -- app/profile/page.tsx
 about -- app/about/page.tsx
 
-# Nesting route
+# Nested route
