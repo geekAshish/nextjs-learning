@@ -1,0 +1,43 @@
+# Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+# Deploy on Vercel
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+# What is NextJS
+
+# Next.js simplifies the process of building a web application for production
+
+1. Routing
+2. API Route
+3. Rendering
+4. Data Fetching
+5. Styling
+6. Optimization
+7. Dev and prod build system
+
+# Public Folder: Holds all the statics file and images
+
+## 2
+
+# React Server Components contd.
+
+1. Server Components
+   In Next.js, all components are Server components by default
+   They have the ability to run tasks like reading files or fetching data from a
+   database
+   However, they don't have the ability to use hooks or handle user interactions
+2. Client Components
+   To create a Client component, it's necessary to add "use client" at the top of
+   the component file
+   Client components can't perform tasks like reading files, but they have the
+   ability to use hooks and manage interactions
+
+# Routing
