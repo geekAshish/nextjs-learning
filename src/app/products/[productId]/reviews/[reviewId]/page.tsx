@@ -1,8 +1,13 @@
+import { notFound } from "next/navigation";
+
 function ProductReview({
   params,
 }: {
   params: { reviewId: string; productId: string };
 }) {
+  if (parseInt(params.reviewId) > 100) {
+    notFound();
+  }
   return (
     <>
       <h1>

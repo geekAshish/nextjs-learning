@@ -67,3 +67,8 @@ products-review -- app/products/[productId]/reviews/[reviewId]
 # Catch all Segments
 
 docs -- app/docs/[...slug]/page.tsx
+
+# Page Not Found
+
+for whole app level: not-found.tsx
+for component level: notFound() -- with condition -- you could create a specific page for that
