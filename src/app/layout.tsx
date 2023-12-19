@@ -1,5 +1,6 @@
 import Header from "@/components/Header/Header";
 import { Metadata } from "next";
+import "../../src/style.css";
 
 export const metadata: Metadata = {
   title: {

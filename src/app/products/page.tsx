@@ -1,24 +1,32 @@
+"use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 function Product() {
-  const productId = 100;
+  const productNavLink = [
+    { name: "Product 1", link: "products/1" },
+    { name: "Product 2", link: "products/2" },
+    { name: "Product 3", link: "products/3" },
+    { name: "Product 100", link: "products/100" },
+  ];
+  const pathName = usePathname();
   return (
     <>
       <h1>Product List</h1>
-      <h2>
-        <Link href={"products/1"}>Product 1</Link>
-      </h2>
-      <h2>
-        <Link href={"products/2"}>Product 2</Link>
-      </h2>
-      <h2>
-        <Link href={"products/3"} replace>
-          Product 3
-        </Link>
-      </h2>
-      <h2>
-        <Link href={`products/${productId}`}>Product {productId}</Link>
-      </h2>
+      {productNavLink &&
+        productNavLink.map((product, i) => {
+          const isActive = pathName.startsWith(product.link);
+          return (
+            <div key={i} className="p-1">
+              <Link
+                href={product.link}
+                className={isActive ? "font-bold text-red-500" : ""}
+              >
+                {product.name}
+              </Link>
+            </div>
+          );
+        })}
     </>
   );
 }
