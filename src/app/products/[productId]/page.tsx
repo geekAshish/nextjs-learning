@@ -1,4 +1,14 @@
-function ProductDetails({ params }: { params: { productId: string } }) {
+import { Metadata } from "next";
+
+type Props = { params: { productId: string } };
+
+export const generateMetadata = ({ params }: Props): Metadata => {
+  return {
+    title: `product ${params.productId}`,
+  };
+};
+
+function ProductDetails({ params }: Props) {
   console.log(params);
 
   return (

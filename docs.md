@@ -138,7 +138,16 @@ login page and register page have the same layout
           When there's metadata in multiple places for the same route, they get combined,
           but page metadata will replace layout metadata if they have the same properties
 
+## Static route
+
 page.tsx
 export const metadata = {
 title: 'About us',
 }
+
+## dynamic route
+
+import { Metadata } from "next";
+export const generateMetadata = ({ params }: {params: {productId: string}}): Metadata => {
+return {title: `product ${params.productId}`,};
+};
