@@ -110,3 +110,35 @@ group then by there nature
    or layout.tsx file
 2. That component should accept a children prop that will be populated with a child
    page during rendering
+
+# Nested Layout
+
+You can also create a layout for a specific page, inside it's folder
+Page content will go inside the layout {children}
+
+# Route Group Layout
+
+(auth-layout)/login, register, layout.tsx
+login page and register page have the same layout
+
+- Route Group uses:
+  1. To organize your project in a manner that doesn't affect the URL
+  2. To selectively apply a layout to certain segments while leaving others unchanged
+
+# Routing Metadata
+
+- Configuring Metadata
+  1. Export a static metadata object
+  2. Export a dynamic generateMetadata function
+     - Metadata rules
+       1. Both layout.tsx and page.tsx files can export metadata. If defined in a layout, it
+          applies to all pages in that layout, but if defined in a page, it applies only to that
+          page
+       2. Metadata is read in order, from the root level down to the final page level
+          When there's metadata in multiple places for the same route, they get combined,
+          but page metadata will replace layout metadata if they have the same properties
+
+page.tsx
+export const metadata = {
+title: 'About us',
+}
