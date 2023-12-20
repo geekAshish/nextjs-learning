@@ -151,3 +151,13 @@ import { Metadata } from "next";
 export const generateMetadata = ({ params }: {params: {productId: string}}): Metadata => {
 return {title: `product ${params.productId}`,};
 };
+
+# Title Metadata
+
+# Link component Navigation
+
+# Active Link
+
+# Navigate Programmatically
+
+app/order-product/page.tsx
